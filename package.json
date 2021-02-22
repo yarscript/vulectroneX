@@ -1,0 +1,65 @@
+{
+  "name": "electron-vue",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist_electron/index.js",
+  "scripts": {
+    "electron:serve": "vue-cli-service electron:serve",
+    "start": "vue-cli-service build && electron .",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "electron-debug": "^3.2.0",
+    "electron-is-dev": "^1.2.0",
+    "electron-screencapture": "^1.1.0",
+    "electron-store": "^7.0.1",
+    "electron-updater": "^4.3.5",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.2",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "electron": "^11.2.3",
+    "electron-devtools-installer": "^3.1.1",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-electron-builder": "^2.0.0-rc.6",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "globals": {
+      "ipcRenderer": "off"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
